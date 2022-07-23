@@ -1,5 +1,8 @@
 FROM ubuntu:16.04
 
+RUN mkdir /toontown
+WORKDIR /toontown
+
 # Install dependencies
 RUN apt-get update && apt-get install -y \
     libfreetype6 \
