@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y \
   && rm -rf /var/lib/apt/lists/*
 
 # Install requests module for the updater script.
-RUN python3 -m pip install requests
+RUN python3 -m pip install requests chardet
 
 COPY updater.py /updater.py
 
