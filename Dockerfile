@@ -3,6 +3,8 @@ FROM ubuntu
 RUN mkdir /toontown
 WORKDIR /toontown
 
+ENV DEBIAN_FRONTEND=noninteractive
+
 # Install dependencies
 RUN apt-get update && apt-get install -y \
     libfreetype6 \
