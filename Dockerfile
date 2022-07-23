@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
     libgl1-mesa-glx \
     libharfbuzz0b \
     libx11-6 \
-    python3 \
+    python3-dev \
     python3-pip \
   && rm -rf /var/lib/apt/lists/*
 
