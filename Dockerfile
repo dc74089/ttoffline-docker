@@ -23,4 +23,4 @@ COPY updater.py /updater.py
 ENV APPIMAGE_EXTRACT_AND_RUN 1
 
 EXPOSE 7198
-CMD python3 ./updater.py && ./offline --dedicated
+CMD python3 /updater.py && ./offline --dedicated
